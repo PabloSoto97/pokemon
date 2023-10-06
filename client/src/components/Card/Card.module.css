@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "pokemon";
+  src: url(../../fuentes/Pokemon\ Solid.ttf);
+}
+.img {
+  width: 8vw;
+  height: 8vw;
+}
+
+.types {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1vh;
+  text-decoration: none;
+}
+
+.typesImg {
+  width: 2vw;
+  height: 2vw;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: pokemon;
+  font-size: 1.1rem;
+  color: rgb(200, 255, 0);
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+}
+
+.none {
+  text-decoration: none;
+  color: rgba(48, 30, 9, 0.616);
+}

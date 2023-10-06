@@ -1,0 +1,235 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5vw;
+  width: 71vw;
+  height: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  gap: 10px;
+}
+.pika {
+  margin-left: 1px; /* Agrega un margen izquierdo para separarla del contenido */
+  /* Otros estilos que desees agregar */
+  padding-top: 250px;
+}
+.pika2 {
+  margin-left: 1px; /* Agrega un margen izquierdo para separarla del contenido */
+  /* Otros estilos que desees agregar */
+  padding-top: 250px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  gap: 10px;
+  border-radius: 10px;
+  width: 50%;
+  padding-top: 1px;
+  padding-bottom: 2vh;
+  margin-top: 3vh;
+  transition-duration: 0.2s;
+  background-color: red;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(0deg, #313030, #272727);
+}
+.form:before,
+.form:after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  border-radius: 10px;
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000
+  );
+  background-size: 400%;
+  width: calc(100% + 1px);
+  height: calc(100% + 1px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.form:after {
+  filter: blur(100px);
+}
+
+.h2 {
+  font-family: pokemon;
+  font-size: 1.5rem;
+  color: rgb(255, 251, 0);
+}
+
+.div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  gap: -1px;
+}
+
+.divito {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.label {
+  font-family: pokemon;
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgb(255, 251, 0);
+  margin-bottom: 1vh;
+}
+
+.input {
+  width: 9vw;
+  height: 4vh;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-family: "Verdana", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+  background: #f5f5f5;
+  color: #333;
+  outline: none;
+  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.651);
+  transition: box-shadow 0.3s;
+}
+
+.p {
+  font-family: pokemon;
+  font-size: 0.9rem;
+  color: rgb(236, 253, 0);
+}
+
+.select {
+  display: block;
+  font-size: 1rem;
+  font-family: "Verdana", sans-serif;
+  font-weight: 400;
+  color: #444;
+  line-height: 1.3;
+  padding: 0.4em 1.4em 0.3em 0.8em;
+  width: 10vw;
+  box-sizing: border-box;
+  margin: 20px auto;
+  border: 1px solid #aaa;
+  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.651);
+  border-radius: 0.3em;
+  appearance: none;
+}
+
+.typesSelect {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.btn {
+  margin-top: 3vh;
+  width: 8vw;
+  height: 5vh;
+  background-color: #00ff004d;
+  color: rgb(255, 251, 0);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.651);
+  font-family: pokemon;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 2px 1px 2px 1px rgba(255, 255, 255, 0.651);
+  color: rgb(209, 255, 2);
+  background-color: rgba(0, 255, 76, 0.897);
+  box-shadow: 2px 1px 2px 1px rgba(255, 255, 255, 0.651);
+}
+
+.btnCreate {
+  margin-top: 3vh;
+  width: 8vw;
+  height: 5vh;
+  background-color: #00ff004d;
+  color: rgb(255, 251, 0);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.651);
+  font-family: pokemon;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btnCreate:hover {
+  color: rgb(209, 255, 2);
+  background-color: rgba(0, 255, 76, 0.897);
+  box-shadow: 2px 1px 2px 1px rgba(255, 255, 255, 0.651);
+}
+
+.pTypes {
+  font-family: "Verdana", sans-serif;
+  font-size: 1rem;
+  color: rgba(48, 30, 9, 0.897);
+  margin-right: 0.5vw;
+}
+
+.btnDelete {
+  text-decoration: none;
+  width: 1vw;
+  height: 2vh;
+  background-color: rgba(48, 30, 9, 0.616);
+  color: rgb(184, 184, 184);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.651);
+  font-family: "Verdana", sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btnDelete:hover {
+  color: white;
+  background-color: rgba(48, 30, 9, 0.897);
+}
